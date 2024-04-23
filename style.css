@@ -1,0 +1,721 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+section{
+    background-color: #bc1e1e;
+}
+
+main{
+    background-color: #bc1e1e;
+}
+
+body::-webkit-scrollbar{
+    width: 12px;
+    background-color: #e64040;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #b41a1a;
+    border-left: solid 1px #a51313;
+    border-radius: 5px;
+}
+
+/*---------------------------Seccion de header y nav-----------------------
+---------------------------------------------------------------------------*/
+
+.header{
+    background-color: #0f0f0f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.header__div{
+    display: grid;
+    grid-template-columns: auto auto;
+    place-items: center;
+    column-gap: 20px;
+}
+
+.header__div--div{
+    height: 90px;
+    width: auto;
+}
+
+.header__img{
+    height: 90px;
+    width: auto;
+    padding-left: 60px;
+    cursor: pointer;
+}
+
+.header__h1{
+    color: #ffffff;
+    font-size: 40px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.header__p{
+    display: inline;
+    font-size: 40px;
+    font-weight: 900;
+    color: #bc1e1e;
+}
+
+.header__a--div{
+    text-decoration: none;
+}
+
+.header__li--nav{
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0 16px 0;
+}
+
+.header__a--nav{
+    color: #f8f8f8;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 4px 5px;
+}
+
+.header__a--nav:hover{
+    color: #e64040;
+    transition: 0.2s;
+}
+
+.header__nav{
+    padding-right: 40px;
+}
+
+/*--------------------------------------Footer-----------------------------
+---------------------------------------------------------------------------*/
+
+.footer{
+    background-color: #181818;
+    width: 100%;
+    height: 110px;
+    font-family: default;
+}
+
+.footer__p{
+    color: #6e6e6e;
+    text-align: center;
+    padding-top: 65px;
+}
+
+/*-----------------------------------------------------------INDEX.HTML-----------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------Sección de slider-------------------------
+---------------------------------------------------------------------------*/
+
+.section--slider{
+    padding: 7px 0 7px;
+    background-color: #400000;
+    border-bottom: solid 2px #670000;
+}
+
+.section__img--slider{
+    height: 375px;
+    width: auto;
+    position: static;
+    border-radius: 20px;
+}
+
+.section__div--slider{
+    height: 375px;
+    width: auto;
+    overflow: hidden;
+}
+
+.section__ul--slider{
+    display: flex;
+    animation: cambio 50s  infinite alternate linear;
+}
+
+.section__li--slider{
+    width: 100%;
+    list-style: none;
+    height: 275px;
+    width: auto;
+    margin-left: 10px;
+}
+
+@keyframes cambio{
+    0%{margin-left: 0px;}
+    100%{margin-left: -2286px;}
+}
+
+/*-----------------------------Seccion de links de id----------------------
+---------------------------------------------------------------------------*/
+
+.section--id{
+    padding: 12px 0 12px;
+}
+
+.section__ul--id{
+    justify-content: center;
+    display: flex;
+    list-style: none;
+}
+
+.section__li--id{
+    margin: 20px 30px;
+    position: relative;
+}
+
+.section__a--id{
+    text-decoration: none;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.section__button--id{
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #bc1e1e;
+    border: solid 3px #400000;
+    color: #400000;
+    font-weight: 500;
+}
+
+.section__button--id:hover{
+    background-color: #400000;
+    color: #bc1e1e;
+    transition: 0.2s;
+}
+
+/*------------------------------Seccion de Párrafo-------------------------
+---------------------------------------------------------------------------*/
+
+.section--text{
+    padding-top: 60px;
+    width: 1354px;
+    margin: auto;
+}
+
+.section__h2--text{
+    font-size: 60px;
+    text-decoration: #111111;
+}
+
+.section__p--text{
+    padding: 10px 100px;
+    text-align: justify;
+    text-indent: 40px;
+}
+
+.section__button--text{
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #bc1e1e;
+    border: solid 3px #400000;
+    color: #400000;
+    font-weight: 500;
+}
+
+.section__div--text{
+    display: flex;
+    padding: 40px 100px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.section__button--text:hover{
+    background-color: #400000;
+    color: #bc1e1e;
+    transition: 0.2s;
+}
+
+/*------------------------------Seccion de Gallardo------------------------
+---------------------------------------------------------------------------*/
+
+.section--gallardo{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 65px;
+    background-color: #400000;
+    align-items: center;
+    justify-content: center;
+    border-top: solid 2px #670000;
+    border-bottom: solid 2px #670000;
+}
+
+.section__h2--gallardo{
+    font-size: 70px;
+    text-align: start;
+}
+
+.section__p--gallardo{
+    font-size: 30px;
+    text-align: end;
+}
+
+.section__div--gallardo{
+    margin: 8px 0 0;
+}
+
+.section__img--gallardo{
+    height: 400px;
+    width: auto;
+    border-radius: 30px;
+}
+
+.section__h3--gallardo{
+    writing-mode: vertical-lr;
+    font-size: 60px;
+    justify-self: center;
+}
+
+/*------------------------------Seccion de Jugadores-----------------------
+---------------------------------------------------------------------------*/
+
+.section--jugadores{
+    padding-bottom: 50px;
+}
+
+.section__h3--jugadores{
+    font-size: 40px;
+    text-align: center;
+    padding: 80px 0 50px;
+}
+
+.section__ul--jugadores{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(5, 190px);
+    column-gap: 40px;
+    justify-content: center;
+    text-align: center;
+    font-weight: 500;
+}
+
+.section__img--jugadores{
+    width: 150px;
+    height: auto;
+    border-radius: 30px;
+}
+
+.section__div--jugadores{
+    display: block;
+    text-align: right;
+    margin: 35px 80px 0 0;
+}
+
+.section__button--jugadores{
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #bc1e1e;
+    border: solid 3px #400000;
+    color: #400000;
+    font-weight: 500;
+}
+
+.section__button--jugadores:hover{
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #400000;
+    border: solid 3px #400000;
+    color: #bc1e1e;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+/*--------------------------Seccion de Cuerpo Tecnico----------------------
+---------------------------------------------------------------------------*/
+
+.div__line--2{
+    background-color: #670000;
+    margin: auto;
+    height: 2px;
+    width: 1000px;
+}
+
+.section--cuerpo{
+    padding-bottom: 50px;
+}
+
+.section__h3--cuerpo{
+    font-size: 40px;
+    text-align: center;
+    padding: 40px 0 50px;
+}
+
+.section__ul--cuerpo{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(5, 190px);
+    column-gap: 40px;
+    justify-content: center;
+    text-align: center;
+    font-weight: 500;
+}
+
+.section__img--cuerpo{
+    width: 150px;
+    height: auto;
+    border-radius: 30px;
+}
+
+.section__div--tecnico{
+    display: block;
+    text-align: right;
+    margin: 35px 80px 0 0;
+}
+
+.section__button--tecnico{
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #bc1e1e;
+    border: solid 3px #400000;
+    color: #400000;
+    font-weight: 500;
+}
+
+.section__button--tecnico:hover{
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #400000;
+    border: solid 3px #400000;
+    color: #bc1e1e;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+/*------------------------------Seccion de Titulos-------------------------
+---------------------------------------------------------------------------*/
+
+.section__h3--titulos{
+    font-size: 40px;
+    text-align: center;
+    padding: 40px 0 50px;
+}
+
+.section__ul--titulos{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    column-gap: 150px;
+    justify-content: center;
+    text-align: center;
+    font-weight: 500;
+}
+
+.section__img--titulos{
+    width: 200px;
+    height: auto;
+    border-radius: 30px;
+}
+
+.section__p--titulos{
+    padding-top: 5px;
+    font-size: 25px;
+}
+
+/*------------------------------Seccion del estadio------------------------
+---------------------------------------------------------------------------*/
+
+.div__line--1{
+    background-color: #670000;
+    margin: auto;
+    height: 2px;
+    width: 1236px;
+}
+
+.section--estadio{
+    padding: 80px 0 50px;
+}
+
+.section__div--estadio{
+    padding-top: 60px;
+    display: inline-flex;
+}
+
+.section__div--content{
+    padding-left: 60px;
+}
+
+.section__iframe--content{
+    width: 450px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.section__article--content{
+    padding: 10px 60px 0 20px;
+}
+
+.section__h3--monumental{
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.section__p--monumental{
+    text-align: justify;
+    text-indent: 40px;
+}
+
+.section__div--monumental{
+    display: block;
+    text-align: right;
+    margin: 30px 50px 0 0;
+}
+
+.section__button--monumental{
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #bc1e1e;
+    border: solid 3px #400000;
+    color: #400000;
+    font-weight: 500;
+}
+
+.section__button--monumental:hover{
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #400000;
+    border: solid 3px #400000;
+    color: #bc1e1e;
+    font-weight: 500;
+    transition: 0.2s;
+}
+/*-----------------------------------------------------------TE CUENTO------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------
+
+SEGUNDO LINK EN NAV*/
+ 
+/*Acá hay bastante código que optimizar, hay etiquetas que se podrían juntar todavía*/
+
+.river-al-mundo{
+    text-align: center;
+    font-size: 60px;
+    text-decoration: #111111;
+}
+
+.article-1-te-cuento{
+    padding-top: 60px;
+}
+
+.article-1-te-cuento{
+    padding: 15px 100px 50px;
+    text-align: justify;
+    text-indent: 40px;
+}
+
+.div-texto-2-te-cuento{
+    background-color: #670000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 2px solid #8f0a0a;
+    border-bottom: 2px solid #8f0a0a;
+}
+
+.article-2-te-cuento{
+    display: inline-block;
+    width: 800px;
+}
+
+.link-te-cuento b{
+    color: #000000;
+}
+
+.river-2019{
+    font-size: 60px;
+}
+
+.texto-2-te-cuento{
+    text-indent: 40px;
+    text-align: justify;
+}
+
+.imagen-borre-texto-2{
+    width: 480px;
+    height: 437.72;
+}
+
+.imagen-borre-texto-2 img{
+    padding-top: 8px;
+    width: 480px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.articles-te-cuento{
+    padding: 40px 100px;
+    text-align: justify;
+}
+
+.titulos-te-cuento{
+    font-size: 50px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.article-3-te-cuento div p{
+    text-align: justify;
+    text-indent: 40px;
+}
+
+.article-4-te-cuento div p{
+    text-align: justify;
+    text-indent: 40px;
+}
+
+.article-4-te-cuento{
+    padding: 40px 100px;
+}
+
+.link-te-cuento{
+    text-decoration: none;
+}
+
+/*------------------------------------------------------------PLANTEL-------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------
+
+TERCER LINK EN NAV*/
+
+.plantel-jugadores h3, h2{
+    text-align: center;
+}
+
+.titulos-plantel{
+    font-size: 40px;
+    padding: 50px 0;
+}
+
+.titulo-cuerpo-tecnico{
+    font-size: 60px;
+    padding: 50px 0;
+}
+
+.arqueros-lista{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 190px);
+    column-gap: 40px;
+    justify-content: center;
+    text-align: center;
+    font-weight: 500;
+}
+
+.arqueros-lista li img{
+    width: 150px;
+    height: auto;
+    border-radius: 30px;
+}
+
+.plantel-arqueros,
+.plantel-defensa,
+.plantel-mediocampo,
+.plantel-delantera,
+.plantel-cuerpo-tecnico{
+    padding-bottom: 50px;
+}
+
+/*-------------------------Seccion de Listas de Jugadores-------------------
+---------------------------------------------------------------------------*/
+
+.listas-plantel{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(5, 190px);
+    column-gap: 50px;
+    row-gap: 40px;
+    justify-content: center;
+    text-align: center;
+    font-weight: 500;
+}
+
+.listas-plantel li img{
+    width: 150px;
+    height: auto;
+    border-radius: 30px;
+}
+
+/*---------------------------Seccion del formaciones-----------------------
+---------------------------------------------------------------------------*/
+
+.titulo-formacion{
+    font-size:60px;
+    padding: 40px 0 25px;
+}
+
+.div-formaciones{
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+}
+
+.div-imagen-formaciones img{
+    border-radius: 30px;
+    width: 450px;
+    height: auto;
+}
+
+.formaciones-div-p{
+    width: 1294px;
+    margin: auto;
+}
+
+.formaciones-div-p p{
+    text-align: justify;
+    text-indent: 40px;
+    padding: 30px 100px;
+}
+
+/*------------------------------------------------------------PLANTEL-------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------
+
+CUARTO LINK EN NAV*/
+
+.section--competencias{
+    padding: 30px 0;
+    border-bottom: solid #670000 2px;
+}
+
+.section__ul--competencias{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    place-items: center;
+}
+
+.section__img--competencias{
+    width: 160px;
+    height: auto;
+}
+
+/*------------------------------------------------------------ESTADIO---------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
+
+QUINTO LINK DEL NAV*/
+
+.section__div--hinchada{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.section__img--hinchada{
+    width: 1354px;
+    height: 100%;
+}
+/*-------------------------------------------------------MEDIA QUERY MOBILE---------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 1000px){
+    
+}
