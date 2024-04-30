@@ -1,3 +1,28 @@
+
+
+
+/*Los dos links preparados para esta entrega son: index.html y te-cuento.html
+
+/*KAHTY Y LETI ME HARÍAN UN FAVOR SI ME DICEN COMO VEN EL COLOR DE FONDO DE LA PÁGINA. Porque yo lo veo
+con un color rojo suave que va bien para los ojos por así decirlo, pero a la hora de sacarle captura de
+pantalla, y la imágen la abro en otro dispositivo, veo que el color es diferente y que se muestra bastante
+más fuerte o saturado*/
+
+/*Ya sé que es parte de la consigna, pero no pude usar bootstrap y sus propiedades porque hay ciertas partes
+de la página que me las rompía tan solo linkeando el script que va en el head, junto con eso tampoco tuve
+tiempo para dedicarle mucho estudio, así decidí no usarlo al menos en esta entrega, ya que no entiendo mucho.
+Por lo tanto, todo lo de la página está hecho a mano. Espero poder entregarlo completo en la siguiente entrega,
+pero más allá que se que pueda afectar en la nota de entrega espero se entienda esto*/
+
+/*El header no tiene el responsive que debería ya que quería hacerlo con bootstrap pero como dije no pude :(
+para la próxima intentaré encontrar un poco más de tiempo*/
+
+/*A la hora de verlo en mobile, justamente por culpa del header que le falta el responsive, hace que el resto
+de cosas se separen del borde, me di cuenta, que sacando el header andaba todo perfecto. Y sin más excusas, nada más.
+Graciass*/
+
+
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -24,6 +49,25 @@ body::-webkit-scrollbar-thumb{
     background-color: #b41a1a;
     border-left: solid 1px #a51313;
     border-radius: 5px;
+}
+
+
+button:hover{
+    cursor: pointer;
+}
+
+.div__line--1{
+    background-color: #670000;
+    margin: auto;
+    height: 2px;
+    width: 90%;
+}
+
+.div__line--2{
+    background-color: #670000;
+    margin: auto;
+    height: 2px;
+    width: 75%;
 }
 
 /*---------------------------Seccion de header y nav-----------------------
@@ -101,16 +145,26 @@ body::-webkit-scrollbar-thumb{
 ---------------------------------------------------------------------------*/
 
 .footer{
+    display: grid;
     background-color: #181818;
     width: 100%;
     height: 110px;
-    font-family: default;
+    justify-content: center;
+    align-items: end;
 }
 
 .footer__p{
     color: #6e6e6e;
-    text-align: center;
-    padding-top: 65px;
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+
+.footer__br--p{
+    display: none;
+}
+
+.footer__b--p{
+    font-size: 20px;
 }
 
 /*-----------------------------------------------------------INDEX.HTML-----------------------------------------------------------
@@ -178,10 +232,6 @@ body::-webkit-scrollbar-thumb{
     text-decoration: none;
 }
 
-button:hover{
-    cursor: pointer;
-}
-
 .section__button--id{
     padding: 10px;
     border-radius: 15px;
@@ -201,8 +251,7 @@ button:hover{
 ---------------------------------------------------------------------------*/
 
 .section--text{
-    padding-top: 60px;
-    width: 1354px;
+    padding-top: 40px;
     margin: auto;
 }
 
@@ -215,6 +264,7 @@ button:hover{
     padding: 10px 100px;
     text-align: justify;
     text-indent: 40px;
+    font-size: 20px;
 }
 
 .section__button--text{
@@ -245,10 +295,9 @@ button:hover{
 .section--gallardo{
     display: grid;
     grid-template-columns: repeat(3, auto);
-    column-gap: 65px;
     background-color: #400000;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     border-top: solid 2px #670000;
     border-bottom: solid 2px #670000;
 }
@@ -292,6 +341,10 @@ button:hover{
     padding: 80px 0 50px;
 }
 
+.section__p2--jugadores{
+    display: none;
+}
+
 .section__ul--jugadores{
     list-style: none;
     display: grid;
@@ -299,7 +352,7 @@ button:hover{
     column-gap: 40px;
     justify-content: center;
     text-align: center;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .section__img--jugadores{
@@ -320,7 +373,6 @@ button:hover{
     background-color: #bc1e1e;
     border: solid 3px #400000;
     color: #400000;
-    font-weight: 500;
 }
 
 .section__button--jugadores:hover{
@@ -336,13 +388,6 @@ button:hover{
 /*--------------------------Seccion de Cuerpo Tecnico----------------------
 ---------------------------------------------------------------------------*/
 
-.div__line--2{
-    background-color: #670000;
-    margin: auto;
-    height: 2px;
-    width: 1000px;
-}
-
 .section--cuerpo{
     padding-bottom: 50px;
 }
@@ -353,6 +398,10 @@ button:hover{
     padding: 40px 0 50px;
 }
 
+.section__p2--cuerpo{
+    display: none;
+}
+
 .section__ul--cuerpo{
     list-style: none;
     display: grid;
@@ -360,7 +409,7 @@ button:hover{
     column-gap: 40px;
     justify-content: center;
     text-align: center;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .section__img--cuerpo{
@@ -410,7 +459,7 @@ button:hover{
     column-gap: 150px;
     justify-content: center;
     text-align: center;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .section__img--titulos{
@@ -426,13 +475,6 @@ button:hover{
 
 /*------------------------------Seccion del estadio------------------------
 ---------------------------------------------------------------------------*/
-
-.div__line--1{
-    background-color: #670000;
-    margin: auto;
-    height: 2px;
-    width: 1236px;
-}
 
 .section--estadio{
     padding: 80px 0 50px;
@@ -457,6 +499,10 @@ button:hover{
     padding: 10px 60px 0 20px;
 }
 
+.section__br--monumental{
+    display: none;
+}
+
 .section__h3--monumental{
     font-size: 40px;
     margin-bottom: 25px;
@@ -467,7 +513,8 @@ button:hover{
     text-indent: 40px;
 }
 
-.section__div--monumental{
+.section__div--monumental,
+.section__mas--content{
     display: block;
     text-align: right;
     margin: 30px 50px 0 0;
@@ -491,30 +538,28 @@ button:hover{
     font-weight: 500;
     transition: 0.2s;
 }
+
+.section__mas--content{
+    display: none;
+}
+
 /*-----------------------------------------------------------TE CUENTO------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------
 
 SEGUNDO LINK EN NAV*/
- 
-/*Acá hay bastante código que optimizar, hay etiquetas que se podrían juntar todavía*/
 
-.river-al-mundo{
-    text-align: center;
-    font-size: 60px;
-    text-decoration: #111111;
+.text--te-cuento{
+    padding: 15px 0px 50px;
 }
 
-.article-1-te-cuento{
-    padding-top: 60px;
+.section__h3--text{
+    display: flex;
+    font-size: 45px;
+    justify-content: center;
 }
 
-.article-1-te-cuento{
-    padding: 15px 100px 50px;
-    text-align: justify;
-    text-indent: 40px;
-}
-
-.div-texto-2-te-cuento{
+.section__div--efectividad,
+.section__div--puskas{
     background-color: #670000;
     display: flex;
     justify-content: space-evenly;
@@ -523,63 +568,45 @@ SEGUNDO LINK EN NAV*/
     border-bottom: 2px solid #8f0a0a;
 }
 
-.article-2-te-cuento{
+.section__article--efectividad,
+.section__article--puskas{
     display: inline-block;
     width: 800px;
+    padding: 0 10px;
 }
 
-.link-te-cuento b{
+.section__a--text{
+    text-decoration: none;
+}
+
+.section__b--text{
     color: #000000;
 }
 
-.river-2019{
+.section__h3--efectividad,
+.section__h3--puskas{
     font-size: 60px;
 }
 
-.texto-2-te-cuento{
+.section__p--efectividad,
+.section__p--puskas{
     text-indent: 40px;
     text-align: justify;
 }
 
-.imagen-borre-texto-2{
-    width: 480px;
-    height: 437.72;
+.section__div--efecti,
+.section__div--pusk{
+    width: auto;
+    height: auto;
+    padding: 0 10px;
 }
 
-.imagen-borre-texto-2 img{
+.section__img--efecti,
+.section__img--pusk{
     padding-top: 8px;
     width: 480px;
     height: auto;
     border-radius: 20px;
-}
-
-.articles-te-cuento{
-    padding: 40px 100px;
-    text-align: justify;
-}
-
-.titulos-te-cuento{
-    font-size: 50px;
-    text-align: center;
-    padding: 10px 0;
-}
-
-.article-3-te-cuento div p{
-    text-align: justify;
-    text-indent: 40px;
-}
-
-.article-4-te-cuento div p{
-    text-align: justify;
-    text-indent: 40px;
-}
-
-.article-4-te-cuento{
-    padding: 40px 100px;
-}
-
-.link-te-cuento{
-    text-decoration: none;
 }
 
 /*------------------------------------------------------------PLANTEL-------------------------------------------------------------
@@ -716,6 +743,499 @@ QUINTO LINK DEL NAV*/
 /*-------------------------------------------------------MEDIA QUERY MOBILE---------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------------*/
 
-@media only screen and (max-width: 1000px){
+
+@media only screen and (max-width: 1200px){
     
+/*Lista id-----------------------------------------------------------------------------*/
+
+    .section__li--id{
+        margin: 15px 10px;
+    }
+
+    .section__ul--id{
+        justify-content: space-evenly;
+    }
+
+
+/*Gallardo Index-----------------------------------------------------------------------*/
+
+    .section__h2--gallardo{
+        font-size: 65px;
+    }
+
+    .section__p--gallardo{
+        font-size: 25px;
+    }
+
+    .section__h3--gallardo{
+        display: none;
+    }
+
+    .section__img--gallardo{
+        height: 350px;
+        width: auto;
+        border-radius: 30px;
+    }
+
+/*Jugadores y Cuerpo Técnico Index----------------------------------------------------*/
+
+    .section__ul--jugadores{
+        column-gap: 0;
+        grid-template-columns: repeat(5, 190px);
+        justify-content: space-evenly;
+    }
+
+    .section__ul--cuerpo{
+        column-gap: 0;
+        justify-content: space-evenly;
+    }
+
+/*Estadio del Index--------------------------------------------------------------------*/
+
+    .section__div--estadio{
+        display: grid;
+        grid-template-rows: auto auto;
+
+    }
+
+    .section__iframe--content{
+        margin: auto;
+    }
+
+    .section__div--content{
+        padding: 0;
+        justify-self: center;
+    }
+
+    .section__article--content{
+        padding: 0 100px 50px 100px;
+        grid-row-start: 1;
+    }
+
+    .section__br--monumental{
+        display: inline-block;
+    }
+
+    .section__h3--monumental{
+        text-align: center;
+    }
+
+    .section__div--monumental{
+        display: none;
+    }
+
+    .section__mas--content{
+        display: block;
+        text-align: center;
+        margin: 20px 0 0;
+    }
+
+/*Puskas y efectividad 2019-------------------------------------------------------------*/
+
+    .section__div--efectividad,
+    .section__div--puskas{
+        justify-content: center;
+        padding: 20px 0;
+    }
+
+    .section__h3--efectividad,
+    .section__h3--puskas{
+        text-align: center;
+    }
+
+    .section__article--efectividad,
+    .section__article--puskas{
+        padding: 0 50px;
+    }
+
+    .section__div--efecti,
+    .section__div--pusk{
+        display: none;
+    }
+
+}
+
+
+@media only screen and (max-width: 992px){
+
+/*Lista id------------------------------------------------------------------------------*/
+
+    .section__li--id{
+        margin: 10px 10px;
+    }
+
+    .section__button--id{
+        padding: 7px 4px;
+        border-radius: 15px;
+    }
+
+/*Texto---------------------------------------------------------------------------------*/
+
+    .section__p--text{
+        padding: 10px 70px;
+        font-size: 19px;
+    }
+
+/*Gallardo Index------------------------------------------------------------------------*/
+
+    .section__h2--gallardo{
+        font-size: 55px;
+    }
+
+    .section__p--gallardo{
+        font-size: 24px;
+    }
+
+    .section__img--gallardo{
+        width: auto;
+        height: 260px;
+    }
+
+/*Títulos Index-------------------------------------------------------------------------*/
+
+    .section__ul--titulos{
+        column-gap: 0;
+        justify-content: space-evenly;
+    }
+
+/*Jugadores y Cuerpo Técnico Index------------------------------------------------------*/
+
+    .section__ul--jugadores,
+    .section__ul--cuerpo{
+        grid-template-columns: repeat(5, 115px);
+        justify-content: space-evenly;
+        font-size: 10px;
+    }
+
+    .section__img--jugadores,
+    .section__img--cuerpo{
+        width: 115px;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .section__p1--jugadores,
+    .section__p1--cuerpo{
+        display: none;
+    }
+
+    .section__p2--jugadores,
+    .section__p2--cuerpo{
+        display: block;
+    }
+
+    .section__h3--jugadores,
+    .section__h3--cuerpo{
+        padding: 50px 0;
+    }
+
+/*Títulos Index-------------------------------------------------------------------------*/
+
+    .section__h3--titulos{
+        font-size: 33px;
+        text-align: center;
+        padding: 40px 0 30px;
+    }
+
+    .section__ul--titulos{
+        grid-template-columns: repeat(3, 150px);
+        column-gap: 50px;
+        justify-content: center;
+    }
+    
+    .section__img--titulos{
+        width: auto;
+        height: 200px;
+        border-radius: 25px;
+    }
+    
+    .section__p--titulos{
+        font-size: 20px;
+    }
+
+/*Footer--------------------------------------------------------------------------------*/
+
+    .footer__br--p{
+        display: block;
+    }
+
+    .footer__p{
+        text-align: center;
+    }
+
+/*Puskas y efectividad 2019-------------------------------------------------------------*/
+
+    .section__h3--efectividad,
+    .section__h3--puskas{
+        font-size: 55px;
+    }
+
+}
+
+
+@media only screen and (max-width: 768px){
+
+/*Lista Id------------------------------------------------------------------------------*/
+
+    .section__ul--id{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section__li--id{
+        margin: 10px 15px;
+    }
+
+/*Texto---------------------------------------------------------------------------------*/
+
+    .section__h2--text{
+        font-size: 45px;
+    }
+
+    .section__h3--text{
+        font-size: 40px;
+    }
+
+    .section__p--text{
+        padding: 10px 50px;
+        font-size: 19px;
+    }
+
+    .section__div--text{
+        padding: 25px 65px 35px;
+    }
+
+/*Gallardo Index------------------------------------------------------------------------*/
+
+    .section--gallardo{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 10px;
+        justify-content: center;
+    }
+
+    .section__divs--gallardo{
+        margin: 0 10px;
+    }
+
+    .section__h2--gallardo{
+        font-size: px;
+    }
+
+    .section__p--gallardo{
+        font-size: px;
+    }
+
+    .section__img--gallardo{
+        width: auto;
+        height: 300px;
+    }
+
+/*Jugadores y Cuerpo Técnico Index------------------------------------------------------*/
+
+    .section__ul--jugadores,
+    .section__ul--cuerpo{
+        grid-template-columns: repeat(4, 115px);
+    }
+
+    .section__li--jugadores,
+    .section__li--cuerpo{
+        display: none;
+    }
+    
+/*Titulos Index--------------------------------------------------------------------------*/
+
+    .section__h3--titulos{
+        font-size: 25px;
+    }
+
+    .section__ul--titulos{
+        grid-template-columns: repeat(3, 120px);
+        column-gap: 50px;
+        justify-content: center;
+    }
+    
+    .section__img--titulos{
+        width: 120px;
+        height: auto;
+        border-radius: 25px;
+    }
+    
+    .section__p--titulos{
+        font-size: 17px;
+    }
+
+/*Estadio Index--------------------------------------------------------------------------*/
+
+    .section__h3--monumental{
+        font-size: 33px;
+    }
+
+    .section__p--monumental{
+        font-size: 18px;
+    }
+
+    .section__article--content{
+        padding: 0 80px 30px;
+    }
+
+/*Footer---------------------------------------------------------------------------------*/
+
+    .footer__p{
+        font-size: 17px;
+    }
+
+    .footer__b--p{
+        font-size: 17px;
+    }
+
+/*Puskas y efectividad 2019-------------------------------------------------------------*/
+
+    .section__h3--efectividad,
+    .section__h3--puskas{
+        font-size: 50px;
+    }
+
+    .section__article--efectividad,
+    .section__article--puskas{
+        padding: 0 30px;
+    }
+
+}
+
+
+@media only screen and (max-width: 576px){
+
+/*Text Index----------------------------------------------------------------------------*/
+    
+    .section__p--text{
+        padding: 10px 30px;
+        font-size: 17px;
+    }
+
+/*Gallardo Index------------------------------------------------------------------------*/
+
+    .section__h2--gallardo{
+        font-size: 40px;
+    }
+
+    .section__p--gallardo{
+        font-size: 18px;
+
+    }
+
+    .section__divs--gallardo{
+        padding: 5px 0;
+    }
+
+/*Jugadores Index-----------------------------------------------------------------------*/
+
+    .section__h3--cuerpo,
+    .section__h3--jugadores{
+        padding: 30px 0;
+        font-size: 30px;
+    }
+
+    .section__ul--jugadores,
+    .section__ul--cuerpo{
+        grid-template-columns: repeat(3, 105px);
+    }
+
+    .section__img--jugadores,
+    .section__img--cuerpo{
+        width: 105px;
+        height: auto;
+    }
+
+    .section__li2--jugadores,
+    .section__li2--cuerpo{
+        display: none;
+    }
+
+    .section__div--jugadores,
+    .section__div--tecnico{
+        display: flex;
+        margin: 0;
+        padding: 35px 0 0;
+        justify-content: center;
+    }
+
+/*Título Index--------------------------------------------------------------------------*/
+
+    .section__h3--titulos{
+        font-size: 23px;
+    }
+
+    .section__ul--titulos{
+        grid-template-columns: repeat(3, 100px);
+        column-gap: 0px;
+        justify-content: space-evenly;
+    }
+
+    .section__img--titulos{
+        width: 90px;
+        border-radius: 20px;
+    }
+
+    .section__p--titulos{
+        font-size: 13px;
+    }
+
+/*Estadio Index-------------------------------------------------------------------------*/
+    
+    .section--estadio {
+        padding: 50px 0;
+    }
+
+    .section__h3--monumental{
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+
+    .section__article--content{
+        padding: 0 40px 30px;
+    }
+
+    .section__p--monumental{
+        font-size: 17px;
+    }
+
+    .section__iframe--content{
+        width: 300px;
+        height: 250px;
+        border-radius: 10px;
+    }
+
+/*footer---------------------------------------------------------------------------------*/
+
+    .footer__p{
+        font-size: 12px;
+    }
+
+    .footer__b--p{
+        font-size: 12px;
+    }
+
+/*Puskas y efectividad 2019-------------------------------------------------------------*/
+
+    .section__h3--efectividad,
+    .section__h3--puskas{
+        font-size: 40px;
+    }
+
+    .section__p--efectividad,
+    .section__p--puskas{
+        font-size: 17px;
+    }
+
+    .section__h3--text{
+        display: flex;
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .section__h2--text{
+        font-size: 40px;
+    }
+
 }
